@@ -1,7 +1,16 @@
 <?php
 /**
+ * Praxis Environment Indicator
+ *
+ * @package   Praxis_Environment_Indicator
+ * @author    Praxis Web
+ * @copyright 2026 Praxis Web
+ * @license   GPL-2.0-or-later
+ *
+ * @wordpress-plugin
  * Plugin Name:       Praxis Environment Indicator
- * Description:       Shows which environment (local, development, staging, production) you are on, detected from the current domain, and redirects outgoing email on non-production environments.
+ * Plugin URI:        https://github.com/chris-schertenlieb/praxis-environment-indicator
+ * Description:       Always know which site you're on. Shows a colour-coded Local / Development / Staging / Production badge in the admin bar, detected from the site's domain so it stays correct after database migrations, and safely redirects outgoing email on non-production environments.
  * Version:           1.0.0
  * Requires at least: 5.7
  * Requires PHP:      7.4
@@ -9,6 +18,7 @@
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       praxis-environment-indicator
+ * Update URI:        https://github.com/chris-schertenlieb/praxis-environment-indicator
  */
 
 defined( 'ABSPATH' ) || exit;

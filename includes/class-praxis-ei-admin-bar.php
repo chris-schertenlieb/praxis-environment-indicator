@@ -80,7 +80,7 @@ final class Praxis_EI_Admin_Bar {
 		}
 
 		$css = "
-#wpadminbar { border-bottom: 3px solid {$color}; box-sizing: content-box; }
+#wpadminbar { border-bottom: 5px solid {$color}; box-sizing: content-box; }
 #wpadminbar #wp-admin-bar-praxis-ei > .ab-item { background: {$color}; color: #fff; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; }
 #wpadminbar #wp-admin-bar-praxis-ei:hover > .ab-item,
 #wpadminbar #wp-admin-bar-praxis-ei.hover > .ab-item { background: {$color}; color: #fff; filter: brightness(1.15); }

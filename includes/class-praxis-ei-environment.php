@@ -216,7 +216,9 @@ final class Praxis_EI_Environment {
 	 * @return array{0:string,1:string} [ host, port ].
 	 */
 	private static function split_port( string $domain ): array {
-		if ( preg_match( '#^(.*?):(\d+)$#', $domain, $m ) && '' !== $m[1] && substr_count( $m[1], ':' ) === 0 || ( isset( $m[1] ) && 0 === strpos( $m[1], '[' ) ) ) {
+		// "[::1]:8080" (bracketed IPv6) or "host:3000". A bare IPv6 address
+		// without brackets has no port.
+		if ( preg_match( '#^(\[[^\]]+\]|[^:\[\]]+):(\d+)$#', $domain, $m ) ) {
 			return array( $m[1], $m[2] );
 		}
 		return array( $domain, '' );

@@ -1,0 +1,62 @@
+.praxis-ei-current {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin: 16px 0;
+	padding: 12px 14px;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-left: 4px solid var(--praxis-ei-color, #646970);
+}
+
+.praxis-ei-badge {
+	display: inline-block;
+	padding: 3px 10px;
+	border-radius: 3px;
+	background: var(--praxis-ei-color, #646970);
+	color: #fff;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .04em;
+}
+
+.praxis-ei-mappings {
+	max-width: 760px;
+	margin-top: 12px;
+}
+
+.praxis-ei-mappings .regular-text {
+	width: 100%;
+}
+
+.praxis-ei-col-remove {
+	width: 32px;
+	text-align: center;
+}
+
+.praxis-ei-remove {
+	font-size: 20px;
+	line-height: 1;
+	color: #b32d2e;
+	text-decoration: none;
+}
+
+.praxis-ei-check {
+	display: block;
+	margin-bottom: 8px;
+}
+
+.praxis-ei-check.is-disabled {
+	opacity: .55;
+	cursor: not-allowed;
+}
+
+.praxis-ei-domains {
+	color: #646970;
+}
+
+.praxis-ei-check .description {
+	display: block;
+	margin-left: 24px;
+}

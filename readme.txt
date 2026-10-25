@@ -31,6 +31,8 @@ The list is stored encoded so that migration search-replace (WP Migrate, `wp sea
 * original recipients are kept in `X-Praxis-Original-To/Cc/Bcc` headers
 * if no valid redirect address is set, email is blocked rather than delivered
 
+**Tab icon.** On non-production environments the site's favicon is shrunk and framed in the environment colour, so you can tell local, development and staging tabs apart at a glance. Production always keeps its normal icon. This applies only to logged-in users and the login page, never to visitors. If the icon can't be read (e.g. a cross-origin CDN without CORS), the frame shows the environment's initial letter instead. You can turn it off in settings.
+
 == Matching rules ==
 
 * The domain is taken from the site's home URL (`WP_HOME` / Settings > General), not from the request's Host header, so it can't be spoofed by visitors.

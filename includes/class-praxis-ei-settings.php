@@ -31,6 +31,7 @@ final class Praxis_EI_Settings {
 			'default_env'   => 'staging',
 			'redirect_envs' => array(),
 			'redirect_to'   => '',
+			'favicon'       => true,
 		);
 	}
 

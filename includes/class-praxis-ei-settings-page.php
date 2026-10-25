@@ -114,6 +114,7 @@ final class Praxis_EI_Settings_Page {
 				'default_env'   => $default_env,
 				'redirect_envs' => array_values( array_unique( $redirect_envs ) ),
 				'redirect_to'   => implode( ', ', $redirect_to ),
+				'favicon'       => ! empty( $post['favicon'] ),
 			)
 		);
 
@@ -243,6 +244,16 @@ final class Praxis_EI_Settings_Page {
 						<td>
 							<?php self::render_select( 'default_env', $settings['default_env'], $types, 'praxis-ei-default' ); ?>
 							<p class="description"><?php esc_html_e( 'Used when the current domain matches none of the rules above, e.g. a new staging or preview URL nobody has added yet. A non-production default is the safer choice.', 'praxis-environment-indicator' ); ?></p>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row"><?php esc_html_e( 'Browser tab icon', 'praxis-environment-indicator' ); ?></th>
+						<td>
+							<label>
+								<input type="checkbox" name="favicon" value="1" <?php checked( $settings['favicon'] ); ?>>
+								<?php esc_html_e( 'Frame the site icon in the environment colour', 'praxis-environment-indicator' ); ?>
+							</label>
+							<p class="description"><?php esc_html_e( 'Non-production environments only, and only for logged-in users and the login page. Production always keeps its normal icon, so any tab with a coloured frame is not the live site.', 'praxis-environment-indicator' ); ?></p>
 						</td>
 					</tr>
 				</table>

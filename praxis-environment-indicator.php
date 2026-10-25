@@ -22,9 +22,11 @@ require_once PRAXIS_EI_DIR . 'includes/class-praxis-ei-settings.php';
 require_once PRAXIS_EI_DIR . 'includes/class-praxis-ei-environment.php';
 require_once PRAXIS_EI_DIR . 'includes/class-praxis-ei-admin-bar.php';
 require_once PRAXIS_EI_DIR . 'includes/class-praxis-ei-email-redirect.php';
+require_once PRAXIS_EI_DIR . 'includes/class-praxis-ei-favicon.php';
 
 Praxis_EI_Admin_Bar::init();
 Praxis_EI_Email_Redirect::init();
+Praxis_EI_Favicon::init();
 
 if ( is_admin() ) {
 	require_once PRAXIS_EI_DIR . 'includes/class-praxis-ei-settings-page.php';

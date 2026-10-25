@@ -42,6 +42,15 @@
 	text-decoration: none;
 }
 
+#praxis-ei-add,
+#praxis-ei-add-current {
+	vertical-align: middle;
+}
+
+#praxis-ei-add-current {
+	margin-left: 12px;
+}
+
 .praxis-ei-check {
 	display: block;
 	margin-bottom: 8px;

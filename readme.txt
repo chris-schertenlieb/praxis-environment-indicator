@@ -2,7 +2,7 @@
 Contributors: praxisweb
 Tags: environment, staging, admin bar, email, development
 Requires at least: 5.7
-Tested up to: 6.8
+Tested up to: 7.1
 Requires PHP: 7.4
 Stable tag: 1.0.0
 License: GPL-2.0-or-later
@@ -76,6 +76,10 @@ No. Production email is always delivered normally, whatever is stored in the set
 = Does it catch every email? =
 
 Only email sent through `wp_mail()`. Plugins that call an email API directly (bypassing `wp_mail()`) are not affected.
+
+= Which WordPress and PHP versions does it support? =
+
+It is tested on WordPress 7.1.3 with PHP 8.5, with no warnings or deprecation notices. It needs at least WordPress 5.7 and PHP 7.4.
 
 = Who sees the indicator? =
 

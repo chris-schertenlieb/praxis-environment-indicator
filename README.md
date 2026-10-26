@@ -7,8 +7,9 @@
 A WordPress plugin that shows a colour-coded environment badge in the admin bar and redirects outgoing email on non-production sites. The environment comes from the site's domain, so it stays correct after a database migration.
 
 ![WordPress 5.7+](https://img.shields.io/badge/WordPress-5.7%2B-21759b?logo=wordpress&logoColor=white)
-![Tested up to 6.8](https://img.shields.io/badge/tested%20up%20to-6.8-21759b)
+![Tested up to 7.1](https://img.shields.io/badge/tested%20up%20to-7.1-21759b)
 ![PHP 7.4+](https://img.shields.io/badge/PHP-7.4%2B-777bb4?logo=php&logoColor=white)
+![Tested on PHP 8.5](https://img.shields.io/badge/tested%20on-PHP%208.5-777bb4?logo=php&logoColor=white)
 ![License GPL-2.0-or-later](https://img.shields.io/badge/license-GPL--2.0--or--later-blue)
 
 ![Local](https://img.shields.io/badge/-LOCAL-2e7d32?style=for-the-badge)
@@ -48,6 +49,10 @@ The same list goes with every copy of the database, and each site picks the righ
 - 🛑 **Fails closed**: if redirection is on but no valid address is set, email is blocked, not delivered.
 - 🔒 **Can't be spoofed**: the domain comes from the site's home URL, not the request's `Host` header.
 - 🧩 **Overridable** with a `wp-config.php` constant and filters.
+
+## Compatibility
+
+Tested on **WordPress 7.1.3** with **PHP 8.5**, with `WP_DEBUG` on and no warnings or deprecation notices. Minimum requirements are WordPress 5.7 (for the `pre_wp_mail` filter) and PHP 7.4.
 
 ## Installation
 
